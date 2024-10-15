@@ -1,7 +1,7 @@
 # Vehicle-Builder <img align="right" src="https://img.shields.io/badge/License-MIT-blue"></img>
 
 ## Description
-This is a sample github readme to show off Professional README creator
+Vehicle builder which uses inquierer to allow users to play around with three different vehicles (Car, Motorcycle, and Truck). 
 
 ## Table of Contents
 
