@@ -310,8 +310,8 @@ class Cli {
           truck.tow(answers.vehicleToTow);
           this.performActions();
         }
-        // TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
-        // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
+        // ! TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
+        // ! TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
       });
   }
 
@@ -334,6 +334,8 @@ class Cli {
             'Turn left',
             'Reverse',
             'Select or create another vehicle',
+            'Tow a vehicle',
+            'Do a wheelie',
             'Exit',
           ],
         },
@@ -394,6 +396,24 @@ class Cli {
           for (let i = 0; i < this.vehicles.length; i++) {
             if (this.vehicles[i].vin === this.selectedVehicleVin) {
               this.vehicles[i].reverse();
+            }
+          }
+        } else if (answers.action === 'Tow a vehicle') {
+          // find the selected vehicle and reverse it
+          for (let i = 0; i < this.vehicles.length; i++) {
+            if (this.vehicles[i].vin === this.selectedVehicleVin && this.vehicles[i] instanceof Truck) {
+              let truck : Truck = this.vehicles[i]
+              this.findVehicleToTow(truck);
+              this.performActions;
+            }
+          }
+        } else if (answers.action === 'Do a wheelie') {
+          // find the selected vehicle and reverse it
+          for (let i = 0; i < this.vehicles.length; i++) {
+            if (this.vehicles[i].vin === this.selectedVehicleVin && this.vehicles[i] instanceof Motorbike) {
+              let motorbike : Motorbike = this.vehicles[i]
+              motorbike.wheelie;              
+              this.performActions;
             }
           }
         }
