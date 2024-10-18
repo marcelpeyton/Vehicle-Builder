@@ -1,7 +1,7 @@
 # Vehicle-Builder <img align="right" src="https://img.shields.io/badge/License-MIT-blue"></img>
 
 ## Description
-This is a sample github readme to show off Professional README creator
+Vehicle builder which uses inquierer to allow users to play around with three different vehicles (Car, Motorcycle, and Truck). Along with building a database of vehicles, users can use many options on the cars given in command line questions.
 
 ## Table of Contents
 
@@ -9,32 +9,23 @@ This is a sample github readme to show off Professional README creator
   <li><a href="#Installation">Installation</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#license">License</a></li>
-  <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#tests">Tests</a></li>
-  <li><a href="#questions">Questions</a></li>
+  <li><a href="#video">Video</a></li>
 </ol>
   
 
 ## Installation
-No install given
+Clone this repo then:
+```npm i```
 
 ## Usage
-No usage given
+To use:
+```npm start```
 
 ## License
 Distributed under the MIT. See https://opensource.org/license/mit for more information
 
-## Contributing
-No contributors given
+## Video
 
-## Tests
-No tests given
-
-## Questions
-If you have any questions please contact me at sample@email.com.
-GitHub info
-Username: sample 
-Link: https://github.com/sample
 
   
   
