@@ -42,7 +42,7 @@ class Motorbike extends Vehicle{
     // If not, create 2 new Wheel objects
     // Otherwise, use the provided wheels array
     if (wheels.length !== 2) {
-      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+      this.wheels = [new Wheel(), new Wheel()];
     } else {
       this.wheels = wheels;
     }
